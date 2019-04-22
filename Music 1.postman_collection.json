@@ -1,0 +1,593 @@
+{
+	"info": {
+		"_postman_id": "78e8becd-bf99-46e2-b01d-7325641793bf",
+		"name": "Music 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddMusicSociety1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"composerMusicSocietyId\": 987654,\n    \"composerMusicSocietyName\": \"Lahari\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8001/MusicSociety",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"MusicSociety"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddMusicSociety2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"composerMusicSocietyId\": 987555,\n    \"composerMusicSocietyName\": \"AdithyaMusic\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8001/MusicSociety",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"MusicSociety"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMusicSociety",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8001/MusicSociety",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"MusicSociety"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddComposer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"composerName\": \"Nikhil\",\r\n    \"composerBornDate\": \"11-11-1997\",\r\n    \"composerDiedDate\": \"11-11-2019\",\r\n    \"composerCaeipiNumber\": \"Nikh\",\r\n    \"composerMusicSocietyId\": \"987654\",\r\n    \"createdBy\": \"1\",\r\n    \"createdOn\": \"12-12-2019\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8001/Composer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"Composer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllComposer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8001/Composer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"Composer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetComposerById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8001/Composer/100002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"Composer",
+						"100002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateComposerById",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"composerName\": \"Nikhilpavan S\",\n    \"composerBornDate\": \"11-11-2000\",\n    \"composerDiedDate\": \"11-11-2000\",\n    \"composerCaeipiNumber\": \"Nikh\",\n    \"composerMusicSocietyId\": \"987654\",\n    \"createdBy\": \"1\",\n    \"createdOn\": \"12-12-2019\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8001/Composer/100002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"Composer",
+						"100002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddComposerValidation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"composerName\": \"NIKKK\",\r\n    \"composerBornDate\": null,\r\n    \"composerDiedDate\": \"11-11-2019\",\r\n    \"composerCaeipiNumber\": \"Nikh\",\r\n    \"composerMusicSocietyId\": \"987654\",\r\n    \"createdBy\": \"1\",\r\n    \"createdOn\": \"12-12-2019\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8001/Composer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"Composer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddArtist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"artistName\": \"Nikhil Pavan\",\r\n    \"artistType\": \"Gitar\",\r\n    \"artistBornDate\": \"11-11-1997\",\r\n    \"artistDiedDate\": \"12-12-2019\",\r\n    \"createdBy\": 1233,\r\n    \"createdOn\": \"10-1-2011\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8001/Artist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"Artist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllArtist",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8001/Artist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"Artist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateArtist",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8001/Artist/200000/NNNNNN/SSSSSSSSSSS",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"Artist",
+						"200000",
+						"NNNNNN",
+						"SSSSSSSSSSS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddSong",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"songName\":\"Hello\",\n\t\"songDuration\":\"5 mins\",\n\t\"createdBy\":1,\n\t\"createdOn\":\"18-04-2019\"\n\t\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8001/Song",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"Song"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllSong",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8001/Song",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"Song"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddcomposerSong",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"songId\": \"900000\",\n    \"createdBy\": 333,\n    \"createdOn\": \"12/3/2019\",\n    \"updatedBy\": \"\",\n    \"updatedOn\": \"\",\n    \"composerId\": 100002\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8001/ComposerSong",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"ComposerSong"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllComposerSong",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8001/ComposerSong",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"ComposerSong"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetComposerSong/ById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8001/ComposerSong/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"ComposerSong",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddArtistSong",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"songId\": \"900000\",\n    \"createdBy\": 555533,\n    \"createdOn\": \"12/3/2019\",\n    \"updatedBy\": \"\",\n    \"updatedOn\": \"\",\n    \"artistId\": 200000\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8001/ArtistSong",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"ArtistSong"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllArtistSong",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8001/ArtistSong",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"ArtistSong"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetArtistSongById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8001/ArtistSong/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"ArtistSong",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
